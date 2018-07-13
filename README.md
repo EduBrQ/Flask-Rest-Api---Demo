@@ -69,12 +69,18 @@ Padrão de desenvolvimento restful API - Flask
     ```
 
 * #### Iniciando
-    No prompt entre na pasta restplus-api-demo e execute o comando:
+    No prompt entre na pasta rest_api_demo e execute o comando:
     ```
-    (venv)$ python app.py
+    (venv)$ python server.py
     ```
     Agora você pode acessar o aplicativo em seu navegador local usando
     ```
     http://localhost:8000/home/
     ```
     Ou teste as rotas /diabetes e /pressao usando o Postman
+	
+* #### Testando
+    No prompt entre na pasta rest_api_demo e depois na pasta Testes, escolha entre a pasta de testes de integração ou unitarios e execute o comando:
+    ```
+    (venv)$ python nomeTeste.py
+    ```
