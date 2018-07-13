@@ -20,12 +20,19 @@ Padrão de desenvolvimento restful API - Flask
     ```
         $ git clone https://github.com/EduBrQ/Flask-Rest-Api---Demo.git
     ```
+* Você pode escolher iniciar a aplicação generalizada abrindo a pasta 'rest_api_mvc'.
+* Ou o exemplos de rest api voltada para servir modelos de machine learning, pasta 'rest_api_analytics'.
+
+* Em ambos os casos você irá seguir a mesma ordem das etapas abaixo:
+    ```
+        $ git clone https://github.com/EduBrQ/Flask-Rest-Api---Demo.git
+    ```
 
 
 * #### Dependencias
     1. Cd em seu repositorio clonado, como tal:
         ```
-        $ cd flask-rest-api
+        $ cd rest_api_demo
         ```
 
     2. Crie e ative o seu ambiente virtual em python3:
@@ -52,6 +59,7 @@ Padrão de desenvolvimento restful API - Flask
     ```
 
 * #### Migrações
+    Instale o Postgresql.
     No seu console do psql, crie seu database:
     ```
     > CREATE DATABASE flask_api;
@@ -63,18 +71,18 @@ Padrão de desenvolvimento restful API - Flask
     (venv)$ python manage.py db migrate
     ```
 
-    E finalmente, migre as suas migrações para persistirem no banco de dados
+    E finalmente, transfira as suas migrações para persistirem no banco de dados:
     ```
     (venv)$ python manage.py db upgrade
     ```
 
 * #### Iniciando
-    No prompt entre na pasta rest_api_demo e execute o comando:
+    No prompt entre na pasta rest_api_analytics ou rest_api_geral e execute o comando:
     ```
     (venv)$ python server.py
     ```
     Agora você pode acessar o aplicativo em seu navegador local usando
-    ```
+    ``` 
     http://localhost:8000/home/
     ```
     Ou teste as rotas /diabetes e /pressao usando o Postman
